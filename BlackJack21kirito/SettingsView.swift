@@ -17,41 +17,47 @@ struct SettingsView: View {
             Image("backgroundLoading")
                 .resizable()
                 .ignoresSafeArea()
-            VStack(spacing: 50) {
-                Button {
-                    askReview()
-                } label: {
-                    Image("settingsRect")
-                        .overlay {
+            
+            Image("settingsRect")
+                .overlay {
+                    VStack(spacing: 50) {
+                        Button {
+                            askReview()
+                        } label: {
+                            
                             Image("settings")
                                 .resizable()
                                 .frame(width: 180, height: 125)
+                                .overlay {
+                                    Text("STARS")
+                                        .foregroundStyle(.white)
+                                        .font(.custom(Font.abril, size: 40))
+                                }
                             
-                            Text("STARS")
-                                .foregroundStyle(.white)
-                                .font(.custom(Font.abril, size: 40))
+                            
+                            
                         }
-                }
-                
-                Button {
-                    if let url = URL(string: "mailto:erasmostatzer@gmail.com") {
-                        if UIApplication.shared.canOpenURL(url) {
-                            UIApplication.shared.open(url)
+                        
+                        Button {
+                            if let url = URL(string: "mailto:bottletapie844839@gmail.com") {
+                                if UIApplication.shared.canOpenURL(url) {
+                                    UIApplication.shared.open(url)
+                                }
+                            }
+                        } label: {
+                            
+                            Image("settings")
+                                .resizable()
+                                .frame(width: 180, height: 125)
+                                .overlay {
+                                    Text("CONTACT US")
+                                        .foregroundStyle(.white)
+                                        .font(.custom(Font.abril, size: 30))
+                                }
+                            
                         }
                     }
-                } label: {
-                    Image("settingsRect")
-                        .overlay {
-                            Image("settings")
-                                .resizable()
-                                .frame(width: 180, height: 125)
-                            
-                            Text("CONTACT US")
-                                .foregroundStyle(.white)
-                                .font(.custom(Font.abril, size: 40))
-                        }
                 }
-            }
         }
         .navigationBarBackButtonHidden()
         .navigationBarItems(leading: Back())

@@ -13,8 +13,8 @@ workflows:
          - certificate: certificateBj
       vars:
         BUNDLE_ID: "bj.kogefg.aspogj.ofwj.aogrei"
-        XCODE_PROJECT: "SweetChristamsPenguin.xcodeproj"
-        XCODE_SCHEME: "SweetChristamsPenguin"
+        XCODE_PROJECT: "BlackJack21kirito.xcodeproj"
+        XCODE_SCHEME: "BlackJack21kirito"
         APP_STORE_APPLE_ID: 6738710207
       xcode: 16.0
 
