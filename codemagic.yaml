@@ -15,7 +15,7 @@ workflows:
         BUNDLE_ID: "bj.kogefg.aspogj.ofwj.aogrei"
         XCODE_PROJECT: "BlackJack21kirito.xcodeproj"
         XCODE_SCHEME: "BlackJack21kirito"
-        APP_STORE_APPLE_ID: 6738710207
+        APP_STORE_APPLE_ID: 6739004158
       xcode: 16.0
 
     scripts:
