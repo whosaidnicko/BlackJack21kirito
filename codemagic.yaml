@@ -8,14 +8,14 @@ workflows:
     environment:
       ios_signing:
         provisioning_profiles:
-         - profile: bjprofile
+         - profile: profilebjne
         certificates:
          - certificate: certificateBj
       vars:
         BUNDLE_ID: "bjoorl.sfeis.apoge"
         XCODE_PROJECT: "BlackJack21kirito.xcodeproj"
         XCODE_SCHEME: "BlackJack21kirito"
-        APP_STORE_APPLE_ID: 6739004158
+        APP_STORE_APPLE_ID: 6739215697
       xcode: 16.0
 
     scripts:
