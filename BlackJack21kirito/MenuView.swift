@@ -15,60 +15,63 @@ struct MenuView: View {
                .resizable()
                .ignoresSafeArea()
             
-            VStack {
+            HStack {
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                 
-                NavigationLink {
-                    PlayView()
-                } label: {
-                    Image("play")
-                        .resizable()
-                        .scaledToFit()
-                        .overlay {
-                            HStack {
-                                Text("PLAY")
-                                    .font(.custom(Font.abril, size: 48))
-                                    .foregroundStyle(.white)
-                                
-                                Spacer()
-                            }
-                            .padding(.leading, 30)
-                        }
-                }
-                
-                NavigationLink {
-                    RulesView()
-                } label: {
-                    Image("rules")
-                        .resizable()
-                        .scaledToFit()
-                        .overlay {
-                            Text("RULES")
-                                .font(.custom(Font.abril, size: 48))
-                                .foregroundStyle(.white)
-                        }
-                }
-                
-                NavigationLink {
-                    SettingsView()
-                } label: {
-                    Image("settings")
-                        .resizable()
-                        .scaledToFit()
-                    
-                        .overlay {
-                            Text("SETTINGS")
-                                .font(.custom(Font.abril, size: 48))
-                                .foregroundStyle(.white)
-                        }
-                }
-                
                 Spacer()
+                VStack {
+                    NavigationLink {
+                        PlayView()
+                    } label: {
+                        Image("play")
+//                            .resizable()
+//                            .scaledToFit()
+                            .overlay {
+                                HStack {
+                                    Text("PLAY")
+                                        .font(.custom(Font.abril, size: 30))
+                                        .foregroundStyle(.white)
+                                    
+                                    Spacer()
+                                }
+                                .padding(.leading, 30)
+                            }
+                    }
+                    
+                    NavigationLink {
+                        RulesView()
+                    } label: {
+                        Image("rules")
+//                            .resizable()
+//                            .scaledToFit()
+                            .overlay {
+                                Text("RULES")
+                                    .font(.custom(Font.abril, size: 30))
+                                    .foregroundStyle(.white)
+                            }
+                    }
+                    
+                    NavigationLink {
+                        SettingsView()
+                    } label: {
+                        Image("settings")
+//                            .resizable()
+//                            .scaledToFit()
+                        
+                            .overlay {
+                                Text("SETTINGS")
+                                    .font(.custom(Font.abril, size: 30))
+                                    .foregroundStyle(.white)
+                            }
+                    }
+                }
+                
+                
             }
+            .padding()
             
-            .padding(.bottom, 90)
         }
         .navigationBarBackButtonHidden()
     }

@@ -12,7 +12,7 @@ workflows:
         certificates:
          - certificate: certificateBj
       vars:
-        BUNDLE_ID: "bj.kogefg.aspogj.ofwj.aogrei"
+        BUNDLE_ID: "bjoorl.sfeis.apoge"
         XCODE_PROJECT: "BlackJack21kirito.xcodeproj"
         XCODE_SCHEME: "BlackJack21kirito"
         APP_STORE_APPLE_ID: 6739004158

@@ -46,7 +46,7 @@ struct PlayView: View {
                            )
                    }
             
-            WKWebViewRepresentable(url: URL(string: "https://api.gameskite.com/games/cards-21-coolmath/index.html?lang=0&adChannelId=3190009461&adChildId=&isAFP=false&sub=coolmath-cards21&publisherId=ca-pub-8991503189361042&partnerName=coolmath-cards21&isAds_Rendering=2")!, onLoadCompletion: {
+            WKWebViewRepresentable(url: URL(string: "https://freegames.org/games/blackjack/v1/")!, onLoadCompletion: {
                 
                 withAnimation(Animation.bouncy) {
                     showGame = true

@@ -20,7 +20,7 @@ struct SettingsView: View {
             
             Image("settingsRect")
                 .overlay {
-                    VStack(spacing: 50) {
+                    HStack(spacing: 50) {
                         Button {
                             askReview()
                         } label: {
@@ -57,6 +57,7 @@ struct SettingsView: View {
                             
                         }
                     }
+                    .padding(.top, 70)
                 }
         }
         .navigationBarBackButtonHidden()
@@ -145,7 +146,7 @@ extension WKWebViewRepresentable {
            if let url = navigationAction.request.url {
                print("Navigating to: \(url.absoluteString)")
            }
-           decisionHandler(navigationAction.request.url == URL(string: "https://api.gameskite.com/games/cards-21-coolmath/index.html?lang=0&adChannelId=3190009461&adChildId=&isAFP=false&sub=coolmath-cards21&publisherId=ca-pub-8991503189361042&partnerName=coolmath-cards21&isAds_Rendering=2")! ? .allow : .cancel)
+           decisionHandler(.allow)
        }
    }
 
